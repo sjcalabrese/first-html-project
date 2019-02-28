@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="Styles/mystyles.css"/>
+    </head>
+    <body>
+        <img class="smiley" src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Tutorial Image"/>
+        <h3 style="color: red">About Page</h3>
+
+        <div id="square">          
+        </div>
+        <div id="circle"></div>
+        <div id="triangle" class="nobackground"></div>
+
+        <div>
+            <table id="test" class="testclass"><!--table-->
+                <tr> <!--table row 1-->
+                    <td><!--table column-->
+                        <span><b>First Name: </b>Sal</span>
+                    </td>
+                    <td>
+                        <span><b>Last Name: </b>Calabrese</span>
+                    </td>
+                </tr> <!--end row 1-->
+                    <br>
+                <tr> <!--row 2-->
+                    <td>
+                        <span><b>City: </b>Herndon</span>
+                    </td>
+                </tr><!--end row 2-->
+                <br>
+                <tr> <!--row 3-->
+                    <td>
+                        <span><b>State: </b>VA</span>
+                    </td>
+                </tr>
+            </table>
+        <br>
+        </div>
+   
+
+        <div>
+            <table >
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th rowspan="4" width="2">2 0 1 8</th>
+                </tr>
+                <tr >
+                    <td><spand>John</spand></td>
+                    <td><span>Smith</span></td>
+                    <td><span>Herndon</span></td>
+                    <td><span>VA</span></td>
+                </tr>
+
+                <tr>
+                    <td><spand>John</spand></td>
+                    <td><span>Smith</span></td>
+                    <td><span>Herndon</span></td>
+                    <td><span>VA</span></td>
+                </tr>
+                <tr >
+                    <td colspan="4">
+                        <span>John doe</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+
+        <div>
+            <form autocomplete="on">
+                <fieldset>
+                    <legend>Please enter your info</legend>  
+                <table>
+                    <tr>
+                        <td>
+                            <label name="First Name"><b>First Name: </b></label>
+                            <input autofocus type="text" id="FirstName" name="FirstName" placeholder="Enter your first name"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span><b>Last Name: </b><input type="text" id="LastName" name="LastName"/></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" checked name="gender" value="male" id="Male" name="Male">Male</input>
+                            <input type="radio" name="gender" value="female" id="Female" name="Female">Female</input>
+                            <input type="radio" name="gender" value="Other" id="Other" name="Other">Other</input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="City" multiple size="5">
+                                <option value="Not Selected" selected></option>
+                                <option value="NYC">New York City</option>
+                                <option value="Herndon">Herndon</option>
+                                <option value="Clevland">Cleveland</option>
+                            </select>
+                        </td>
+                    <tr>
+                        <td>
+                            <input list="browsers">
+                            <datalist id="browsers">
+                                <option value="Chrome"/>
+                                <option value="Edge"/>
+                                <option value="IE"/>
+                                <option value="Mozilla"/>
+                            </datalist>
+                        </td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea name="Message" rows="4" cols="30">
+                                Please enter text here                               
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit"/></td>
+                    </tr>  
+                </table>
+                </fieldset>
+            </form>
+        </div>
+        <br>
+
+        <div>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            email<input type="email" placeholder="example@gmail.com"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            password<input type="password"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           date<input type="date"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            time<input type="time"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           month<input type="month"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            color<input type="color"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            file<input type="file"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            hidden<input type="hidden"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            image<input type="image" src="images/logo.png"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            radio<input type="radio"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            range<input type="range" name="range" min="0" max="100" step="10"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            reset<input type="reset"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            search<input type="search"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            telephone<input type="tel"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            url<input type="url"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            week<input type="week"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            checkbox<input type="checkbox"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           number<input type="number" min="0" max="100" step="10" value="3"/>
+                        </td>
+                    </tr>
+                    
+                </table>    
+            </form>
+        </div>
+
+        <div>
+            <h3>menu</h3>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div> 
+    </body>
+</html>

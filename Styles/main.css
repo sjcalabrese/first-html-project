@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(252, 167, 252);
+}
+
+#header {
+    color: red;
+    text-align: center;
+    background-color: rgb(179, 179, 147);
+}
+
+#description{
+    font-weight: bold;
+    font-size: 20;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#desc_column{   
+    background-color: blue;
+    padding:0px;    
+}
+
+#description:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+#image{
+    text-align: center;
+}
+
+#ingredients_row{
+    background-color: brown;
+    font-weight: bold;
+}
+
+#column_1{
+    float: left;
+    width: 50%;
+    height: 180px;
+}
+
+#instructions {
+    background-color: aliceblue;
+}
+
+#ingredients_row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
