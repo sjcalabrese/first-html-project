@@ -1,0 +1,24 @@
+body {
+    background: scroll skyblue url(../images/tp.png) no-repeat center;
+}
+
+#title{
+    color: red;
+    background-color: pink;
+    text-align: center;
+}
+
+#top_menu {
+    text-align: center;
+}
+
+#info_form {
+    text-align: center;
+}
+
+form {
+    align-content: center;
+}
+fieldset {
+    text-align: center;
+}
