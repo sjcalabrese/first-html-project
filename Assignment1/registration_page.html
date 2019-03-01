@@ -5,142 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Registration page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
     <script src="main.js"></script>
 </head>
 <body>
-    <form action="login_page.html">
-        <div>
-            <table>
-                <th>Registration</th>
-
-                <tr>
-                    <td>
-                        <label for="usrname">User Name: </label>
-                        <input type="text" id="usrname" required placeholder="max length of 10 character" maxlength="10"><br>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label for="pswrd">Password: </label>
-                        <input type="password" id="pswrd" required maxlength="15" placeholder="Max length of 15 characters"/><br>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td>
-                        <label for="fname">First Name: </label>
-                        <input type="text" id="fname" placeholder="Please enter first name" required/><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="lname">Last Name: </label>
-                        <input type="text" id="lname" placeholder="Please enter last name" required/><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="address">Address: </label>
-                        <input type="text" id="address" placeholder="Please enter address"/><br>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label for="city">City: </label>
-                        <input type="text" id="city" placeholder="Please enter city" required/><br>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label for="state">State: </label>
-                        <input type="text" id="state" required maxlength="2" placeholder="Please use 2 lettter abbreviation"/><br>
-                </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label for="zip">ZipCode: </label>
-                        <input type="number" id="zip" required maxlength="5" placeholder="5 digit zipcode"/><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                <label for="email">Email: </label>
-                <input type="email" id="email" placeholder="exampe@domain.com" required/><br>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label for="dob">DOB: </label>
-                        <input type="date" id="dob" required/><br>
-                </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <span>Please select marital status: </span>    
-                        <label for="Married" >Married</label>
-                        <input type="radio" name="status" id="Married">
-                                   
-                        <label for="Single">Single</label>
-                        <input type="radio" name="status" id="Single">
-                
-                        <label for="Divorced">Divorced</label>
-                        <input type="radio" name="status" id="Divorced">
-                
-                        <label for="Seperated">Seperated</label>
-                        <input type="radio" name="status" id="Seperated"><br>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <span>Please enter a profession: </span>
-
-                        <label for="Student">Student</label>
-                        <input type="radio" name="prof" id="Student">
-
-                        <label for="Full-time">Full-time Employeement</label>
-                        <input type="radio" name="prof" id="Full-time">
-
-                        <label for="Prof">Professional</label>
-                        <input type="radio" name="prof" id="Prof">
-
-                        <label for="Self_emp">Self Employeed</label>
-                        <input type="radio" name="prof" id="Self_emp"><br>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <span>Own which of these?</span>
-
-                        <label for="Mobile">Mobile</label>
-                        <input type="checkbox" id="Mobile">
-
-                        <label for="Tablet">Tablet</label>
-                        <input type="checkbox" id="Tablet">
-
-                        <label for="Desktop">Desktop</label>
-                        <input type="checkbox" id="Desktop">
-
-                        <label for="Laptop">Laptop</label>
-                        <input type="checkbox"  id="Laptop"><br>
-
-                        <input type="submit">
-                        <input type="reset">
-                    </td>
-                </tr>
-            </table>
+    <div class="container">
+        <div class="header">
+            <H2> Regristration</H2>
         </div>
-    </form>
-
-    <div id="menu">
+        <div class="menu">
             <h3>menu</h3>
             <ul><a href="index.html">Home</a></ul>
             <ul><a href="login_page.html">Login</a></ul>
@@ -149,5 +22,148 @@
             <ul><a href="purchase_page.html">Purchase</a></ul>
             <ul><a href="products.html">Products</a></ul>
         </div>
+        <div class="content" id="registration">
+            <form action="login_page.html">
+                <div>
+                    <table>
+                        
+                        <tr>
+                            <td>
+                                <label for="usrname">User Name: </label>
+                                <input type="text" id="usrname" required placeholder="max length of 10 character" maxlength="10"><br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="pswrd">Password: </label>
+                                <input type="password" id="pswrd" required maxlength="15" placeholder="Max length of 15 characters"/><br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="fname">First Name: </label>
+                                <input type="text" id="fname" placeholder="Please enter first name" required/><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="lname">Last Name: </label>
+                                <input type="text" id="lname" placeholder="Please enter last name" required/><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="address">Address: </label>
+                                <input type="text" id="address" placeholder="Please enter address"/><br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="city">City: </label>
+                                <input type="text" id="city" placeholder="Please enter city" required/><br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="state">State: </label>
+                                <input type="text" id="state" required maxlength="2" placeholder="Please use 2 lettter abbreviation"/><br>
+                        </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="zip">ZipCode: </label>
+                                <input type="number" id="zip" required maxlength="5" placeholder="5 digit zipcode"/><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" placeholder="exampe@domain.com" required/><br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="dob">DOB: </label>
+                                <input type="date" id="dob" required/><br>
+                        </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span>Please select marital status: </span>    
+                                <label for="Married" >Married</label>
+                                <input type="radio" name="status" id="Married">
+
+                                <label for="Single">Single</label>
+                                <input type="radio" name="status" id="Single">
+                            
+                                <label for="Divorced">Divorced</label>
+                                <input type="radio" name="status" id="Divorced">
+                            
+                                <label for="Seperated">Seperated</label>
+                                <input type="radio" name="status" id="Seperated"><br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span>Please enter a profession: </span>
+
+                                <label for="Student">Student</label>
+                                <input type="radio" name="prof" id="Student">
+
+                                <label for="Full-time">Full-time Employeement</label>
+                                <input type="radio" name="prof" id="Full-time">
+
+                                <label for="Prof">Professional</label>
+                                <input type="radio" name="prof" id="Prof">
+
+                                <label for="Self_emp">Self Employeed</label>
+                                <input type="radio" name="prof" id="Self_emp"><br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span>Own which of these?</span>
+
+                                <label for="Mobile">Mobile</label>
+                                <input type="checkbox" id="Mobile">
+
+                                <label for="Tablet">Tablet</label>
+                                <input type="checkbox" id="Tablet">
+
+                                <label for="Desktop">Desktop</label>
+                                <input type="checkbox" id="Desktop">
+
+                                <label for="Laptop">Laptop</label>
+                                <input type="checkbox"  id="Laptop"><br>
+
+                                <input type="submit">
+                                <input type="reset">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            
+                <span><a>Contact Us</a></span>
+                
+                <span><a>About Us</a></span>
+                
+                <span><a>Our History</a></span>
+                
+            </div>  
+    </div>
+
+    
 </body>
 </html>

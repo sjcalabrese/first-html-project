@@ -5,36 +5,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Products Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
     <script src="main.js"></script>
 </head>
 <body>
-    <form action="profile_page.html">
-        <table border="2">
-            <tr>
-                <td>
-                    Vehicle Make <br>
-                    <select>
-                        <option>Dodge</option>
-                        <option>Chevy</option>
-                        <option>Toyota</option>
-                        <option>Honda</option>
-                        <option>Volvo</option>
-                    </select>
-                </td>
-                <td>
-                    Vehicle Model <br>
-                    <select>
-                        <option>Cars</option>
-                        <option>Truck</option>
-                        <option>Vans</option>
-                        <option>SUV</option>
-                    </select>
-                </td>            
-            </tr>
-        </table>
-        <button type="submit">Submit</button>
-        <button type="reset">Clear Selection</button>
-    </form>
+    <div class="container">
+
+        <div class="header">
+            <h1>Select a vehicle</h1>
+        </div>
+
+        <div class="menu">
+            <h3>menu</h3>
+            <ul><a href="index.html">Home</a></ul>
+            <ul><a href="login_page.html">Login</a></ul>
+            <ul><a href="registration_page.html">Register</a></ul>
+            <ul><a href="profile_page.html">Profile</a></ul>
+            <ul><a href="purchase_page.html">Purchase</a></ul>
+            <ul><a href="products.html">Products</a></ul>
+        </div>
+
+        <div class="content" id="products">
+            <div></div>
+            <div>
+                <form action="purchase_page.html">
+                    <table border="2">
+                        <th>Vehicle make</th>
+                        <th colspan="4">Vehicle Type</th>
+                        <th>Quantity</th>
+                        <tr>
+                            <td><input type="radio" name="brand" value="dodge"> Dodge</td>
+                            <td><input type="radio" name="type" value="car">Car</td>
+                            <td><input type="radio" name="type" value="truck">Truck</td>
+                            <td><input type="radio" name="type" value="suv">SUV</td>
+                            <td><input type="radio" name="type" value="van">Van</td>
+                            <td><select>
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="brand" value="chevy">Chevy</td>
+                            <td><input type="radio" name="type" value="car">Car</td>
+                            <td><input type="radio" name="type" value="truck">Truck</td>
+                            <td><input type="radio" name="type" value="suv">SUV</td>
+                            <td><input type="radio" name="type" value="van">Van</td>
+                            <td><select>
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="brand" value="Ford">Ford</td>
+                            <td><input type="radio" name="type" value="car">Car</td>
+                            <td><input type="radio" name="type" value="truck">Truck</td>
+                            <td><input type="radio" name="type" value="suv">SUV</td>
+                            <td><input type="radio" name="type" value="van">Van</td>
+                            <td><select>
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="brand" value="Honda">Honda</td>
+                            <td><input type="radio" name="type" value="car">Car</td>
+                            <td><input type="radio" name="type" value="truck">Truck</td>
+                            <td><input type="radio" name="type" value="suv">SUV</td>
+                            <td><input type="radio" name="type" value="van">Van</td>
+                            <td><select>
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select></td>
+                    </table>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear Selection</button>
+                </form>
+            </div>
+            <div></div>
+        </div>
+
+        <div class="footer">            
+            <span><a>Contact Us</a></span>            
+            <span><a>About Us</a></span>            
+            <span><a>Our History</a></span>            
+        </div>
+    </div>
 </body>
 </html>
