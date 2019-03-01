@@ -1,12 +1,16 @@
 
  body{
-     background-color: black;
- }   
+     background-color: tan;
+     margin: 0;
+ } 
+ 
 .container{
-    height: 100%;
+
+    height: 100vh;
+    widows: 100vw;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto 40px;
+    grid-template-rows: 90px auto 40px;
     background-color: tan;
     grid-template-areas: 
         "h h h h h h h h h h h h"
@@ -17,7 +21,8 @@
 .header {
     grid-area: h;
     color: purple;
-    text-align: center
+    text-align: center;
+    background-color: skyblue;
 }
 
 .menu{
@@ -49,6 +54,8 @@
 #products {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    
 }
 .footer{
     grid-area: f;
