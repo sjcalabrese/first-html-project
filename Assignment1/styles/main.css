@@ -32,7 +32,8 @@
 #registration {
     display: grid;
     grid-template-columns: 1fr;
-    
+    box-sizing: border-box;
+    padding: 16px;
 }
 #login {
     display:grid;
