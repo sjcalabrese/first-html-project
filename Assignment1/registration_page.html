@@ -1,116 +1,128 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Registration page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
-    <script src="main.js"></script>
+
     <style>
-    input[type=text], input[type=password], input[type=number],input[type=date],input[type=email    ] {
-        width: 100%
-    }
+        input[type=text],
+        input[type=password],
+        input[type=number],
+        input[type=date],
+        input[type=email] {
+            width: 100%
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="header">
+        <header class="header">
             <H2> Regristration</H2>
-        </div>
-        <div class="menu">
+        </header>
+        <nav class="menu">
             <h3>menu</h3>
             <ul><a href="index.html">Home</a></ul>
             <ul><a href="login_page.html">Login</a></ul>
             <ul><a href="registration_page.html">Register</a></ul>
             <ul><a href="profile_page.html">Profile</a></ul>
-            <ul><a href="purchase_page.html">Purchase</a></ul>
             <ul><a href="products.html">Products</a></ul>
-        </div>
+            <ul><a href="purchase_page.html">Purchase</a></ul>
+        </nav>
         <div class="content" id="registration">
+
             <form action="login_page.html">
+
                 <div>
                     <table>
-                        
+
                         <tr>
                             <td>
-                                <label for="usrname">User Name:</label>
-                                <input type="text" id="usrname" required placeholder="max length of 10 character" maxlength="10"><br>
+                                <label for="usrname">*User Name:</label>
+                                <input type="text" id="usrname" required maxlength="10"
+                                    placeholder="max length of 10 character"><br>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <label for="pswrd">Password: </label>
-                                <input type="password" id="pswrd" required maxlength="15" minlength="8" placeholder="Min length of 8 Max length of 15 characters"/><br>
+                                <label for="pswrd">*Password: </label>
+                                <input type="password" id="pswrd" required maxlength="15" minlength="8"
+                                    placeholder="Min length of 8 Max length of 15 characters" /><br>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <label for="fname">First Name: </label>
-                                <input type="text" id="fname" placeholder="Please enter first name" required/><br>
+                                <label for="fname">*First Name: </label>
+                                <input type="text" id="fname" placeholder="Please enter first name" required /><br>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="lname">Last Name: </label>
-                                <input type="text" id="lname" placeholder="Please enter last name" required/><br>
+                                <label for="lname">*Last Name: </label>
+                                <input type="text" id="lname" placeholder="Please enter last name" required /><br>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <label for="address">Address: </label>
-                                <input type="text" id="address" placeholder="Please enter address"/><br>
+                                <input type="text" id="address" placeholder="Please enter address" /><br>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <label for="city">City: </label>
-                                <input type="text" id="city" placeholder="Please enter city" required/><br>
+                                <label for="city">*City: </label>
+                                <input type="text" id="city" placeholder="Please enter city" required /><br>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <label for="state">State: </label>
-                                <input type="text" id="state" required maxlength="2" placeholder="Please use 2 lettter abbreviation"/><br>
-                        </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <label for="zip">ZipCode: </label>
-                                <input type="text" id="zip" required pattern="\d*" maxlength="5" placeholder="5 digit zipcode"/><br>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                        <label for="email">Email: </label>
-                        <input type="email" id="email" placeholder="exampe@domain.com" required/><br>
+                                <label for="state">*State: </label>
+                                <input type="text" id="state" required maxlength="2"
+                                    placeholder="Please use 2 lettter abbreviation" /><br>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <label for="dob">DOB: </label>
-                                <input type="date" id="dob" required/><br>
-                        </td>
+                                <label for="zip">*ZipCode: </label>
+                                <input type="text" id="zip" required pattern="\d*" maxlength="5"
+                                    placeholder="5 digit zipcode" /><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">*Email: </label>
+                                <input type="email" id="email" placeholder="exampe@domain.com" required /><br>
+                            </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <span>Please select marital status: </span>    
-                                <label for="Married" >Married</label>
+                                <label for="dob">*DOB: </label>
+                                <input type="date" id="dob" required /><br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span>Please select marital status: </span>
+                                <label for="Married">Married</label>
                                 <input type="radio" name="status" id="Married">
 
                                 <label for="Single">Single</label>
                                 <input type="radio" name="status" id="Single">
-                            
+
                                 <label for="Divorced">Divorced</label>
                                 <input type="radio" name="status" id="Divorced">
-                            
+
                                 <label for="Seperated">Seperated</label>
                                 <input type="radio" name="status" id="Seperated"><br>
                             </td>
@@ -148,9 +160,9 @@
                                 <input type="checkbox" id="Desktop">
 
                                 <label for="Laptop">Laptop</label>
-                                <input type="checkbox"  id="Laptop"><br>
+                                <input type="checkbox" id="Laptop"><br>
 
-                                <input type="submit">
+                                <input type="submit" onclick="registerUser()">
                                 <input type="reset">
                             </td>
                         </tr>
@@ -162,16 +174,17 @@
             </form>
         </div>
         <div class="footer">
-            
-                <span><a>Contact Us</a></span>
-                
-                <span><a>About Us</a></span>
-                
-                <span><a>Our History</a></span>
-                
-            </div>  
+
+            <span><a>Contact Us</a></span>
+
+            <span><a>About Us</a></span>
+
+            <span><a>Our History</a></span>
+
+        </div>
     </div>
 
-    
+    <script src="scripts/main.js"></script>
 </body>
+
 </html>

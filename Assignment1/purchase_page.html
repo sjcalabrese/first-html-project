@@ -1,79 +1,110 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Purchase</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
-    <script src="main.js"></script>
+    <script src="scripts/main.js"></script>
 </head>
-<body>
+
+<body onload="shoppingCart()">
     <div class="container">
 
-        <div class="header">
-            <h1>Select a vehicle</h1>
-        </div>
+        <header class="header">
+            <h1>Shopping Cart</h1>
+        </header>
 
-        <div class="menu">
+        <nav class="menu">
             <h3>menu</h3>
             <ul><a href="index.html">Home</a></ul>
             <ul><a href="login_page.html">Login</a></ul>
             <ul><a href="registration_page.html">Register</a></ul>
             <ul><a href="profile_page.html">Profile</a></ul>
-            <ul><a href="purchase_page.html">Purchase</a></ul>
             <ul><a href="products.html">Products</a></ul>
-        </div>
+            <ul><a href="purchase_page.html">Purchase</a></ul>
+        </nav>
 
         <div class="content" id="products">
             <div></div>
             <div>
-                <form action="confirmation.html">
-                    <table border="2">
-                        <th>Vehicle make</th>
-                        <th colspan="4">Vehicle Type</th>
-                        <th>Quantity</th>
+                <form>
+                    <table border="2" id="products_table">
+                        <th>Vehicle</th>
+                        <th>Description</th>
+                        <th>Unit Price</th>
+                        <th>qty</th>
+                        <th>Purchase</th>
                         <tr>
-                            <td><input type="radio" name="brand" value="dodge"> Dodge</td>
-                            <td><input type="radio" name="type" value="car">Car <img src="images/dodge_car.jpg" width="50px" height="50px"/>$15,000</td>
-                            <td><input type="radio" name="type" value="truck">Truck <img src="images/dodge_truck.jpg" width="50px" height="50px"/>$45,000</td>
-                            <td><input type="radio" name="type" value="suv">SUV <img src="images/dodge_suv.jpg" width="50px" height="50px"/>$25,000</td>
-                            <td><input type="radio" name="type" value="van">Van <img src="images/dodge_van.jpg" width="50px" height="50px"/>$20,000</td>
-                            <td><select>
-                                <option>0</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                            </select></td>
+                            <td><img src="images/dodge_car.jpg" width="75px" height="75px" /></td>
+                            <td>A dodge Car</td>
+                            <td>$18000</td>
+                            <td id="dodgeCarQty"></td>
+                            <td><button id=dodgeCar onclick="removeProduct(this)">Remove 1</button></td>
                         </tr>
                         <tr>
-                            <td><input type="radio" name="brand" value="chevy">Chevy </td>
-                            <td><input type="radio" name="type" value="car">Car <img src="images/chevy_car.jpg" width="50px" height="50px"/>$15,900</td>
-                            <td><input type="radio" name="type" value="truck">Truck <img src="images/chevy_truck.jpg" width="50px" height="50px"/>$45,000</td>
-                            <td><input type="radio" name="type" value="suv">SUV <img src="images/chevy_suv.jpg" width="50px" height="50px"/>$25,500</td>
-                            <td><input type="radio" name="type" value="van">Van <img src="images/chevy_van.jpg" width="50px" height="50px"/>$22,000</td>
-                            <td><select>
-                                <option>0</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                            </select></td>
+                            <td><img src="images/dodge_truck.jpg" width="75px" height="75px" /></td>
+                            <td>Dodge Truck</td>
+                            <td>$45,000</td>
+                            <td id="dodgeTruckQty"></td>                            
+                            <td><button id="dodgeTruck" onclick="removeProduct(this)">Remove 1</button></td>
                         </tr>
-                        
+                        <tr>
+                            <td>Dodge SUV</td>
+                            <td>The car to get you riding off road</td>
+                            <td>$25,000</td>
+                            <td>Yes</td>
+                            <td><a href="purchase_page.html"><img src="images/dodge_suv.jpg" width="75px"
+                                        height="75px" /></a></td>
+                            <td><button id="dodgeSuv" onclick="addProduct(this)">Add to Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>Dodge Van</td>
+                            <td>The vehicle to get your family to their soccer games</td>
+                            <td>$20,000</td>
+                            <td>Yes</td>
+                            <td><a href="purchase_page.html"><img src="images/dodge_van.jpg" width="75px"
+                                        height="75px" /></a></td>
+                            <td><button id="dodgeVan" onclick="addProduct(this)">Add to Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>Chevy Car</td>
+                            <td>A small car</td>
+                            <td>$15900</td>
+                            <td>No</td>
+                            <td><a href="purchase_page.html"><img src="images/chevy_car.jpg" width="75px"
+                                        height="75px" /></a></td>
+                            <td><button id="chevyCar" onclick="addProduct(this)">Add to Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>Chevy Truck</td>
+                            <td>The right sized vehicle to get work done</td>
+                            <td>$45,000</td>
+                            <td>No</td>
+                            <td><a href="purchase_page.html"><img src="images/chevy_truck.jpg" width="75px"
+                                        height="75px" /></a></td>
+                            <td><button id="chevyTruck" onclick="addProduct(this)">Add to Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>Chevy SUV</td>
+                            <td>The car to get you riding off road</td>
+                            <td>$25,500</td>
+                            <td>Yes</td>
+                            <td><a href="purchase_page.html"><img src="images/chevy_suv.jpg" width="75px"
+                                        height="75px" /></a></td>
+                            <td><button id="chevySuv" onclick="addProduct(this)">Add to Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>Chevy Van</td>
+                            <td>The vehicle to get your family to their soccer games</td>
+                            <td>$22,000</td>
+                            <td>Yes</td>
+                            <td><a href="purchase_page.html"><img src="images/chevy_van.jpg" width="75px"
+                                        height="75px" /></a></td>
+                            <td><button id="chevyVan" onclick="addProduct(this)">Add to Cart</button></td>
+                        </tr>
                     </table>
                     <button type="submit">Submit</button>
                     <button type="reset">Clear Selection</button>
@@ -82,11 +113,12 @@
             <div></div>
         </div>
 
-        <div class="footer">            
-            <span><a>Contact Us</a></span>            
-            <span><a>About Us</a></span>            
-            <span><a>Our History</a></span>            
+        <div class="footer">
+            <span><a>Contact Us</a></span>
+            <span><a>About Us</a></span>
+            <span><a>Our History</a></span>
         </div>
     </div>
 </body>
+
 </html>

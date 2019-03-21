@@ -1,106 +1,126 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Products Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
-    <script src="main.js"></script>
+    <script src="scripts/main.js"></script>
 </head>
+
 <body>
     <div class="container">
 
-        <div class="header">
+        <header class="header">
             <h1>View Our Products</h1>
-        </div>
+        </header>
 
-        <div class="menu">
+        <nav class="menu">
             <h3>menu</h3>
             <ul><a href="index.html">Home</a></ul>
             <ul><a href="login_page.html">Login</a></ul>
             <ul><a href="registration_page.html">Register</a></ul>
-            <ul><a href="profile_page.html">Profile</a></ul>
-            <ul><a href="purchase_page.html">Purchase</a></ul>
+            <ul><a href="profile_page.html">Profile</a></ul>            
             <ul><a href="products.html">Products</a></ul>
-        </div>
+            <ul><a href="purchase_page.html">Purchase</a></ul>
+        </nav>
 
         <div class="content" id="products">
             <div></div>
             <div>
-                
+
                 <table border="2" id="products_table">
                     <th>Vehicle</th>
                     <th>Description</th>
                     <th>Unit Price</th>
                     <th>On Hand</th>
                     <th>Images</th>
+                    <th>Purchase</th>
                     <tr>
                         <td>Dodge Car</td>
                         <td>A dodge Car</td>
                         <td>$15000</td>
                         <td>No</td>
-                        <td><img src="images/dodge_car.jpg" width="75px" height="75px"/></td>
+                        <td><a href="purchase_page.html"><img src="images/dodge_car.jpg" width="75px"
+                                    height="75px" /></a></td>
+                        <td><button id=dodgeCar onclick="addProduct(this)">Add to Cart</button></td>
                     </tr>
                     <tr>
                         <td>Dodge Truck</td>
                         <td>The right sized vehicle to get work done</td>
                         <td>$45,000</td>
                         <td>No</td>
-                        <td><img src="images/dodge_truck.jpg" width="75px" height="75px"/></td>
+                        <td><a href="purchase_page.html"><img src="images/dodge_truck.jpg" width="75px"
+                                    height="75px" /></a></td>
+                        <td><button id="dodgeTruck" onclick="addProduct(this)">Add to Cart</button></td>
                     </tr>
                     <tr>
                         <td>Dodge SUV</td>
                         <td>The car to get you riding off road</td>
                         <td>$25,000</td>
                         <td>Yes</td>
-                        <td><img src="images/dodge_suv.jpg" width="75px" height="75px"/></td>
+                        <td><a href="purchase_page.html"><img src="images/dodge_suv.jpg" width="75px"
+                                    height="75px" /></a></td>
+                        <td><button id="dodgeSuv" onclick="addProduct(this)">Add to Cart</button></td>
                     </tr>
                     <tr>
                         <td>Dodge Van</td>
                         <td>The vehicle to get your family to their soccer games</td>
                         <td>$20,000</td>
                         <td>Yes</td>
-                        <td><img src="images/dodge_van.jpg" width="75px" height="75px"/></td>
+                        <td><a href="purchase_page.html"><img src="images/dodge_van.jpg" width="75px"
+                                    height="75px" /></a></td>
+                        <td><button id="dodgeVan" onclick="addProduct(this)">Add to Cart</button></td>
                     </tr>
                     <tr>
                         <td>Chevy Car</td>
                         <td>A small car</td>
                         <td>$15900</td>
                         <td>No</td>
-                        <td><img src="images/chevy_car.jpg" width="75px" height="75px"/></td>
+                        <td><a href="purchase_page.html"><img src="images/chevy_car.jpg" width="75px"
+                                    height="75px" /></a></td>
+                        <td><button id="chevyCar" onclick="addProduct(this)">Add to Cart</button></td>
                     </tr>
                     <tr>
                         <td>Chevy Truck</td>
                         <td>The right sized vehicle to get work done</td>
                         <td>$45,000</td>
                         <td>No</td>
-                        <td><img src="images/chevy_truck.jpg" width="75px" height="75px"/></td>
+                        <td><a href="purchase_page.html"><img src="images/chevy_truck.jpg" width="75px"
+                                    height="75px" /></a></td>
+                        <td><button id="chevyTruck" onclick="addProduct(this)">Add to Cart</button></td>
                     </tr>
                     <tr>
                         <td>Chevy SUV</td>
                         <td>The car to get you riding off road</td>
                         <td>$25,500</td>
                         <td>Yes</td>
-                        <td><img src="images/chevy_suv.jpg" width="75px" height="75px"/></td>
+                        <td><a href="purchase_page.html"><img src="images/chevy_suv.jpg" width="75px"
+                                    height="75px" /></a></td>
+                        <td><button id="chevySuv" onclick="addProduct(this)">Add to Cart</button></td>
                     </tr>
-                   <tr>
+                    <tr>
                         <td>Chevy Van</td>
                         <td>The vehicle to get your family to their soccer games</td>
                         <td>$22,000</td>
                         <td>Yes</td>
-                        <td><img src="images/chevy_van.jpg" width="75px" height="75px"/></td>
+                        <td><a href="purchase_page.html"><img src="images/chevy_van.jpg" width="75px"
+                                    height="75px" /></a></td>
+                        <td><button id="chevyVan" onclick="addProduct(this)">Add to Cart</button></td>
                     </tr>
-                </table>                
+                </table>
             </div>
             <div></div>
         </div>
 
-        <div class="footer">            
-            <span><a>Contact Us</a></span>            
-            <span><a>About Us</a></span>            
-            <span><a>Our History</a></span>            
+        <div class="footer">
+            <span><a>Contact Us</a></span>
+            <span><a>About Us</a></span>
+            <span><a>Our History</a></span>
         </div>
     </div>
 </body>
+
 </html>

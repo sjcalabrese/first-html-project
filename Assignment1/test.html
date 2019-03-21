@@ -1,0 +1,29 @@
+<div id="result"></div>
+
+<script>
+// Check browser support
+var person1 = {
+fname:'sal',
+lname:'Calabrese'};
+
+var person1_serialized = JSON.stringify(person1);
+
+if (typeof(Storage) !== "undefined") {
+  // Store
+  localStorage.setItem("User", person1_serialized); 
+  // Retrieve
+  var OutputPerson1 = JSON.parse(localStorage.getItem("User"));
+  alert(OutputPerson1.fname);
+  alert(OutputPerson1.lname)
+  
+ 
+  	
+  //document.getElementById("result").innerHTM = "OutputPerson1['i']";
+  
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+
+</body>
+</html>
